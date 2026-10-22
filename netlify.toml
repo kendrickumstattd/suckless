@@ -1,0 +1,5 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+# Security headers (CSP, HSTS, framing, etc.) are defined in next.config.ts.

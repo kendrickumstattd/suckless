@@ -1,0 +1,17 @@
+<!-- Build-time form detection for Netlify Forms. The live form is rendered in app/components/ContactForm.tsx. -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <form name="contact" data-netlify="true" netlify-honeypot="company_fax" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <input type="hidden" name="subject" />
+      <input name="name" />
+      <input name="email" type="email" />
+      <input name="organization" />
+      <input name="website" />
+      <select name="service"><option></option></select>
+      <textarea name="message"></textarea>
+      <input name="company_fax" />
+    </form>
+  </body>
+</html>
