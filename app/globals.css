@@ -140,7 +140,9 @@
 .success-reset:hover{transform:translateY(-3px)}
 @keyframes successIn{from{opacity:0;transform:translateY(18px) scale(.98)}to{opacity:1;transform:none}}
 @media(max-width:760px){.contact-success{min-height:520px}}
-.success-badge{animation:badgePop .45s cubic-bezier(.2,1.6,.4,1) .05s both}
-.success-badge svg path{stroke-dasharray:30;stroke-dashoffset:-30;animation:checkDraw .4s ease-out .3s forwards}
+.success-badge{opacity:0}
+.success-badge svg path{stroke-dasharray:30;stroke-dashoffset:30}
+.success-badge.play{opacity:1;animation:badgePop .45s cubic-bezier(.2,1.6,.4,1) both}
+.success-badge.play svg path{stroke-dashoffset:0;animation:checkDraw .45s ease-out .25s both}
 @keyframes badgePop{from{opacity:0;transform:scale(.3) rotate(-40deg)}to{opacity:1;transform:scale(1) rotate(-9deg)}}
-@keyframes checkDraw{to{stroke-dashoffset:0}}
+@keyframes checkDraw{from{stroke-dashoffset:30}to{stroke-dashoffset:0}}
